@@ -11,10 +11,10 @@
       <header class="hero">
         <div>
           <p class="eyebrow">1950-Style Challenge</p>
-          <h1>Imitation Game Arena</h1>
-          <p class="subtitle">Interrogate your hidden partner through text and decide: Human or AI.</p>
+          <h1>Pairing Imitation Arena</h1>
+          <p class="subtitle">Two people are required: one Judge and one Human Entity. The AI is the second hidden entity.</p>
         </div>
-        <div class="hero-chip" id="roomCode">ROOM ----</div>
+        <div class="hero-chip" id="roomCode">MATCH ----</div>
       </header>
 
       <section class="grid-layout">
@@ -22,8 +22,9 @@
           <h2>Lobby</h2>
           <label for="alias">Alias</label>
           <input id="alias" type="text" maxlength="60" placeholder="e.g. Alex" />
-          <button id="startBtn">Start Match</button>
-          <p id="status" class="status">No active session.</p>
+          <button id="startBtn">Find Match</button>
+          <button id="leaveQueueBtn" class="secondary-btn">Leave Queue</button>
+          <p id="status" class="status">Not matchmaking.</p>
 
           <div class="progress-wrap">
             <div class="progress-head">
@@ -37,44 +38,97 @@
 
           <div class="round-card" id="roundCard">
             <h3>Current Round</h3>
-            <p id="roundPrompt">Start a match to load a paper-based challenge.</p>
-            <small id="roundMeta">Category: --</small>
+            <p id="roundPrompt">Find a match to begin.</p>
+            <small id="roundMeta">Role: --</small>
+          </div>
+
+          <div class="round-card">
+            <h3>Judge Verdict</h3>
+            <div class="guess-actions">
+              <button id="guessABtn">Entity A is Human</button>
+              <button id="guessBBtn">Entity B is Human</button>
+            </div>
           </div>
         </aside>
 
         <section class="card chat-card">
           <div id="chatLog" class="chat-log"></div>
           <div class="chat-controls">
-            <input id="messageInput" type="text" maxlength="500" placeholder="Ask a strategic question..." />
-            <button id="sendBtn">Send</button>
+            <input id="messageInput" type="text" maxlength="500" placeholder="Judge: ask both entities | Human: send your response" />
+            <button id="sendBtn">Submit</button>
           </div>
         </section>
 
         <aside class="card verdict-card">
-          <h2>Final Verdict</h2>
-          <label for="confidence">Confidence</label>
-          <input id="confidence" type="range" min="50" max="100" value="70" />
-          <p class="confidence-readout"><span id="confidenceValue">70</span>% sure</p>
-
-          <div class="guess-actions">
-            <button id="guessHumanBtn">Guess Human</button>
-            <button id="guessAiBtn">Guess AI</button>
-          </div>
-
+          <h2>Role Console</h2>
+          <p class="status" id="roleInfo">No role assigned.</p>
+          <p class="status" id="entityInfo">Entity: --</p>
+          <p class="status" id="roundInfo">Round: 0 / 4</p>
           <p id="guessResult" class="result"></p>
 
-          <h3>Live Metrics</h3>
-          <pre id="metricsOutput">Loading...</pre>
+          <h3>Match Feed</h3>
+          <pre id="metricsOutput">Waiting for events...</pre>
         </aside>
       </section>
 
       <section class="card prompt-bank-card">
-        <h2>Imitation Game Brief</h2>
-        <p id="briefSummary">Loading game brief...</p>
-        <div id="promptBank" class="prompt-bank"></div>
+        <h2>Live Pairing Rules</h2>
+        <div id="promptBank" class="prompt-bank">
+          <article class="prompt-item">
+            <h4>Judge</h4>
+            <p>Asks one prompt per round and receives two anonymous answers: Entity A and Entity B.</p>
+          </article>
+          <article class="prompt-item">
+            <h4>Human Entity</h4>
+            <p>Replies naturally to each judge prompt and tries not to be identified.</p>
+          </article>
+          <article class="prompt-item">
+            <h4>Win Condition</h4>
+            <p>Judge wins if they correctly identify the human entity. Otherwise, entities win.</p>
+          </article>
+        </div>
       </section>
     </main>
 
+    <div class="overlay" id="howToPlayModal">
+      <div class="modal-card">
+        <h2>How to Play</h2>
+        <ol>
+          <li>Enter your alias and click <strong>Find Match</strong>.</li>
+          <li>Game starts only when two players are connected.</li>
+          <li>One player is Judge, one player is Human Entity.</li>
+          <li>Judge asks prompts and gets two responses (A and B).</li>
+          <li>Judge submits final verdict; winner is shown at the end.</li>
+        </ol>
+        <button id="howToPlayConfirmBtn">Got it, let me play</button>
+      </div>
+    </div>
+
+    <div class="overlay hidden" id="matchmakingModal">
+      <div class="modal-card center">
+        <div class="spinner"></div>
+        <h2>Matchmaking</h2>
+        <p>Waiting for another player...</p>
+      </div>
+    </div>
+
+    <div class="overlay hidden" id="roleModal">
+      <div class="modal-card">
+        <h2 id="roleModalTitle">Role Assigned</h2>
+        <p id="roleModalBody"></p>
+        <button id="roleModalConfirmBtn">Start Match</button>
+      </div>
+    </div>
+
+    <div class="overlay hidden" id="winnerModal">
+      <div class="modal-card">
+        <h2>Match Finished</h2>
+        <p id="winnerText"></p>
+        <button id="winnerConfirmBtn">Play Again</button>
+      </div>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
     <script src="app.js"></script>
   </body>
 </html>

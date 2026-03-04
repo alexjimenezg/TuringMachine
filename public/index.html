@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Turing Test Lab</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="hero">
+        <div>
+          <p class="eyebrow">1950-Style Challenge</p>
+          <h1>Imitation Game Arena</h1>
+          <p class="subtitle">Interrogate your hidden partner through text and decide: Human or AI.</p>
+        </div>
+        <div class="hero-chip" id="roomCode">ROOM ----</div>
+      </header>
+
+      <section class="grid-layout">
+        <aside class="card lobby-card">
+          <h2>Lobby</h2>
+          <label for="alias">Alias</label>
+          <input id="alias" type="text" maxlength="60" placeholder="e.g. Alex" />
+          <button id="startBtn">Start Match</button>
+          <p id="status" class="status">No active session.</p>
+
+          <div class="progress-wrap">
+            <div class="progress-head">
+              <span>Round Progress</span>
+              <span id="progressText">0%</span>
+            </div>
+            <div class="progress-bar">
+              <div id="progressFill" class="progress-fill"></div>
+            </div>
+          </div>
+
+          <div class="round-card" id="roundCard">
+            <h3>Current Round</h3>
+            <p id="roundPrompt">Start a match to load a paper-based challenge.</p>
+            <small id="roundMeta">Category: --</small>
+          </div>
+        </aside>
+
+        <section class="card chat-card">
+          <div id="chatLog" class="chat-log"></div>
+          <div class="chat-controls">
+            <input id="messageInput" type="text" maxlength="500" placeholder="Ask a strategic question..." />
+            <button id="sendBtn">Send</button>
+          </div>
+        </section>
+
+        <aside class="card verdict-card">
+          <h2>Final Verdict</h2>
+          <label for="confidence">Confidence</label>
+          <input id="confidence" type="range" min="50" max="100" value="70" />
+          <p class="confidence-readout"><span id="confidenceValue">70</span>% sure</p>
+
+          <div class="guess-actions">
+            <button id="guessHumanBtn">Guess Human</button>
+            <button id="guessAiBtn">Guess AI</button>
+          </div>
+
+          <p id="guessResult" class="result"></p>
+
+          <h3>Live Metrics</h3>
+          <pre id="metricsOutput">Loading...</pre>
+        </aside>
+      </section>
+
+      <section class="card prompt-bank-card">
+        <h2>Imitation Game Brief</h2>
+        <p id="briefSummary">Loading game brief...</p>
+        <div id="promptBank" class="prompt-bank"></div>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>

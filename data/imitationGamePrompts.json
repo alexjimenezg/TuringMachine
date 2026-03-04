@@ -1,0 +1,56 @@
+[
+  {
+    "id": "ig-01",
+    "category": "identity",
+    "paperAnchor": "Imitation game setup and hidden identity",
+    "prompt": "Describe your morning in one imperfect, human way.",
+    "humanStyleExample": "I missed my alarm, rushed breakfast, and forgot my charger.",
+    "aiStyleExample": "My morning was productive and nicely organized.",
+    "judgeHint": "Look for specific imperfections or spontaneous details."
+  },
+  {
+    "id": "ig-02",
+    "category": "language",
+    "paperAnchor": "Text-only conversation as test medium",
+    "prompt": "Write a short joke that could fail if told at the wrong time.",
+    "humanStyleExample": "I told my friend to follow their dreams, so they went back to bed.",
+    "aiStyleExample": "Here is a general joke suitable for many contexts.",
+    "judgeHint": "Risky humor often feels more human than perfectly safe humor."
+  },
+  {
+    "id": "ig-03",
+    "category": "creativity",
+    "paperAnchor": "Questions about poetry and expression",
+    "prompt": "Invent two lines of poetry about rain and exams.",
+    "humanStyleExample": "Rain taps my notes, the ink starts to swim; / I study the storm and the storm studies him.",
+    "aiStyleExample": "Rain falls while exams arrive, producing emotional tension.",
+    "judgeHint": "Judge for rhythm, odd phrasing, and personality."
+  },
+  {
+    "id": "ig-04",
+    "category": "reasoning",
+    "paperAnchor": "Reasoning and occasional fallibility",
+    "prompt": "Give a quick answer to 17 × 19, then explain your mental math.",
+    "humanStyleExample": "323, I did 17×20=340 and subtracted 17.",
+    "aiStyleExample": "The exact multiplication yields 323 by arithmetic expansion.",
+    "judgeHint": "Human answers may include shortcuts and informal wording."
+  },
+  {
+    "id": "ig-05",
+    "category": "memory",
+    "paperAnchor": "Consistency over dialogue turns",
+    "prompt": "Mention one food you dislike and why, then stick to it later.",
+    "humanStyleExample": "I can't handle olives; the texture ruins it for me.",
+    "aiStyleExample": "I do not possess biological taste but can discuss preferences.",
+    "judgeHint": "Check consistency in later messages."
+  },
+  {
+    "id": "ig-06",
+    "category": "social",
+    "paperAnchor": "Natural dialogue under uncertainty",
+    "prompt": "A friend is late again. Send one text that sounds annoyed but fair.",
+    "humanStyleExample": "Hey, all good? I'm waiting, just tell me if you're delayed.",
+    "aiStyleExample": "Please note that punctuality is recommended for social coordination.",
+    "judgeHint": "Human tone often balances emotion and politeness."
+  }
+]

@@ -1,0 +1,237 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, Segoe UI, Arial, sans-serif;
+  background: radial-gradient(circle at top left, #1d2d66, #0d111f 45%, #0a0d18 100%);
+  color: #ebefff;
+}
+
+.app-shell {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 28px;
+}
+
+.hero {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 18px;
+}
+
+.eyebrow {
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+  color: #8fa7ff;
+  font-size: 12px;
+}
+
+h1 {
+  margin: 6px 0;
+  font-size: 40px;
+}
+
+.subtitle {
+  margin-top: 0;
+  color: #c9d5ff;
+  max-width: 720px;
+}
+
+.hero-chip {
+  padding: 12px 18px;
+  border-radius: 999px;
+  border: 1px solid #4a5ec0;
+  background: linear-gradient(145deg, #1e2d6f, #17214f);
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.grid-layout {
+  display: grid;
+  grid-template-columns: 280px 1fr 320px;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.card {
+  background: rgba(20, 27, 50, 0.82);
+  border: 1px solid rgba(120, 146, 255, 0.35);
+  border-radius: 16px;
+  padding: 16px;
+  box-shadow: 0 18px 40px rgba(6, 10, 20, 0.35);
+}
+
+h2,
+h3,
+h4 {
+  margin-top: 0;
+}
+
+label {
+  display: block;
+  margin: 10px 0 6px;
+  color: #c4d1ff;
+  font-size: 14px;
+}
+
+input,
+button {
+  width: 100%;
+  padding: 11px 12px;
+  border-radius: 10px;
+  border: 1px solid #3a4b92;
+}
+
+button {
+  cursor: pointer;
+  background: linear-gradient(145deg, #4e6dff, #3754de);
+  color: #f6f8ff;
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+button:hover {
+  filter: brightness(1.06);
+}
+
+.chat-log {
+  height: 470px;
+  overflow: auto;
+  border: 1px solid #334182;
+  border-radius: 12px;
+  padding: 12px;
+  margin-bottom: 12px;
+  background: rgba(11, 17, 36, 0.9);
+}
+
+.msg {
+  margin-bottom: 10px;
+  line-height: 1.4;
+  border-radius: 8px;
+  padding: 8px 10px;
+}
+
+.msg.user {
+  color: #d4e1ff;
+  background: rgba(47, 77, 187, 0.38);
+}
+
+.msg.assistant {
+  color: #d9ffe5;
+  background: rgba(22, 106, 57, 0.32);
+}
+
+.chat-controls {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 8px;
+}
+
+.chat-controls button {
+  width: auto;
+  min-width: 120px;
+}
+
+.progress-wrap {
+  margin-top: 16px;
+}
+
+.progress-head {
+  display: flex;
+  justify-content: space-between;
+  color: #becdff;
+  font-size: 13px;
+}
+
+.progress-bar {
+  height: 12px;
+  border-radius: 999px;
+  background: #1a2349;
+  overflow: hidden;
+  border: 1px solid #304081;
+}
+
+.progress-fill {
+  height: 100%;
+  width: 0;
+  background: linear-gradient(90deg, #6e89ff, #73d6ff);
+  transition: width 220ms ease;
+}
+
+.round-card {
+  margin-top: 14px;
+  padding: 12px;
+  border: 1px solid #334486;
+  border-radius: 12px;
+  background: rgba(16, 23, 46, 0.95);
+}
+
+.round-card p {
+  margin: 8px 0;
+}
+
+.guess-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.confidence-readout,
+.status,
+#roundMeta {
+  color: #bdd2ff;
+}
+
+pre {
+  width: 100%;
+  max-height: 230px;
+  overflow: auto;
+  background: #090d1d;
+  color: #d7e1ff;
+  border-radius: 10px;
+  border: 1px solid #2d3c7d;
+  padding: 10px;
+}
+
+.result {
+  min-height: 24px;
+  font-weight: 700;
+  color: #ffd694;
+}
+
+.prompt-bank-card {
+  margin-bottom: 20px;
+}
+
+.prompt-bank {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 12px;
+}
+
+.prompt-item {
+  border-radius: 12px;
+  padding: 12px;
+  border: 1px solid #33458b;
+  background: rgba(10, 16, 34, 0.9);
+}
+
+.prompt-item p {
+  margin: 7px 0;
+  color: #d5e1ff;
+}
+
+@media (max-width: 1100px) {
+  .grid-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .chat-log {
+    height: 320px;
+  }
+}

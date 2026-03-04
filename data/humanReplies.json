@@ -1,0 +1,50 @@
+[
+  {
+    "keywords": ["hello", "hi", "hey"],
+    "replies": [
+      "Hey! How's your day going?",
+      "Hi! Nice to meet you here.",
+      "Hey hey, what's up?"
+    ]
+  },
+  {
+    "keywords": ["music", "song", "band"],
+    "replies": [
+      "I've been replaying old indie playlists all week.",
+      "Depends on mood, but lo-fi usually wins.",
+      "Random mix: rock, reggaeton, and movie soundtracks."
+    ]
+  },
+  {
+    "keywords": ["movie", "film", "series"],
+    "replies": [
+      "I rewatch comfort movies more than I should.",
+      "Short series are my weakness, one sitting and done.",
+      "If it's suspense, I'm in immediately."
+    ]
+  },
+  {
+    "keywords": ["food", "eat", "hungry"],
+    "replies": [
+      "Tacos are always the correct answer.",
+      "I get hungry every time someone mentions pizza.",
+      "Street food > fancy restaurant, usually."
+    ]
+  },
+  {
+    "keywords": ["study", "school", "university", "itam"],
+    "replies": [
+      "Deadlines always arrive faster than expected.",
+      "I pretend to be calm and then study intensely at night.",
+      "Coffee and a playlist, that's my survival pack."
+    ]
+  },
+  {
+    "keywords": ["weekend", "plan", "party"],
+    "replies": [
+      "I say I'll rest, then end up doing everything.",
+      "Maybe a chill hangout and good food.",
+      "No strict plans yet, which is usually the best plan."
+    ]
+  }
+]

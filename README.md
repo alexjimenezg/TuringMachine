@@ -65,6 +65,33 @@ Now includes an **Imitation Game mode** inspired by Turing's 1950 framing: text-
 
 	 - `http://localhost:3000`
 
+## Owner control scripts (activate/deactivate)
+
+You can control the app with two Windows scripts from the project root:
+
+- `activate.bat`
+	- Starts/rebuilds Docker server
+	- Starts public tunnel
+	- Prints live URLs + health + dashboard metrics (`/api/metrics`)
+
+- `deactivate.bat`
+	- Stops tunnel
+	- Stops Docker server
+	- Prints proof that server is down (health endpoint unreachable)
+
+### Optional stable public URL (recommended)
+
+By default, activation uses a quick Cloudflare URL that can change each run.
+
+For a permanent URL, add to `.env`:
+
+```dotenv
+CF_TUNNEL_TOKEN=your_named_tunnel_token
+CF_PUBLIC_URL=https://your-stable-domain.example.com
+```
+
+When `CF_TUNNEL_TOKEN` is present, `activate.bat` will run the named tunnel and print `CF_PUBLIC_URL`.
+
 ## API summary
 
 - `POST /api/session/start`
@@ -94,6 +121,13 @@ The app collects and stores experiment outcomes in `data/experiments.json`:
 
 - `sessions[]`: participant alias, assigned type, timestamps, message transcript.
 - `guesses[]`: participant final guess, confidence, actual type, correctness, calibration, and score.
+
+Additionally, durable per-record files are written to:
+
+- `data/sessions/<sessionId>.json`
+- `data/guesses/<guessId>.json`
+
+With Docker Compose, `./data` is mounted into the container (`/app/data`), so data is preserved across `activate`/`deactivate` cycles and container restarts.
 
 This gives you measurable data to evaluate how often your friends can correctly identify AI vs human-like chat behavior.
 

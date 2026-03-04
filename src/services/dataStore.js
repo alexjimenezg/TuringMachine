@@ -3,9 +3,13 @@ const path = require("path");
 
 const dataDir = path.join(__dirname, "..", "..", "data");
 const experimentsPath = path.join(dataDir, "experiments.json");
+const sessionsDir = path.join(dataDir, "sessions");
+const guessesDir = path.join(dataDir, "guesses");
 
 async function ensureDataFile() {
   await fs.mkdir(dataDir, { recursive: true });
+  await fs.mkdir(sessionsDir, { recursive: true });
+  await fs.mkdir(guessesDir, { recursive: true });
 
   try {
     await fs.access(experimentsPath);
@@ -34,6 +38,7 @@ async function addSession(session) {
   const data = await readData();
   data.sessions.push(session);
   await writeData(data);
+  await fs.writeFile(path.join(sessionsDir, `${session.id}.json`), JSON.stringify(session, null, 2), "utf8");
 }
 
 async function appendMessage(sessionId, message) {
@@ -47,12 +52,14 @@ async function appendMessage(sessionId, message) {
   session.messages.push(message);
   session.updatedAt = new Date().toISOString();
   await writeData(data);
+  await fs.writeFile(path.join(sessionsDir, `${session.id}.json`), JSON.stringify(session, null, 2), "utf8");
 }
 
 async function addGuess(guessRecord) {
   const data = await readData();
   data.guesses.push(guessRecord);
   await writeData(data);
+  await fs.writeFile(path.join(guessesDir, `${guessRecord.id}.json`), JSON.stringify(guessRecord, null, 2), "utf8");
 }
 
 async function getSessionById(sessionId) {

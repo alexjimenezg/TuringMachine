@@ -1,3 +1,5 @@
 node_modules/
 .env
 data/experiments.json
+data/sessions/
+data/guesses/

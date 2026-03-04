@@ -177,8 +177,11 @@ socket.on("match:found", (payload) => {
   state.maxRounds = payload.maxRounds || 4;
   state.round = 1;
 
+  const isJudge = payload.role === "JUDGE";
+  const roleDisplay = isJudge ? "Judge" : "Entity";
+
   roomCodeEl.textContent = `MATCH ${payload.matchId.slice(0, 8).toUpperCase()}`;
-  roleInfo.textContent = `Role: ${payload.role}`;
+  roleInfo.textContent = `Role: ${roleDisplay}`;
   entityInfo.textContent = payload.controlledEntity
     ? `Entity: ${payload.controlledEntity}`
     : "Entity: hidden";
@@ -189,8 +192,10 @@ socket.on("match:found", (payload) => {
   setProgress(1, state.maxRounds);
   updateInteractionLocks();
 
-  roleModalTitle.textContent = `Role Assigned: ${payload.role}`;
-  roleModalBody.textContent = payload.roleMessage;
+  roleModalTitle.textContent = `Role Assigned: ${roleDisplay}`;
+  roleModalBody.textContent = isJudge
+    ? "You are the Judge. You will receive answers from Entity A and Entity B."
+    : `You are the Human Entity (${payload.controlledEntity}). Reply naturally without revealing yourself.`;
   showModal(roleModal);
 
   appendFeed("Match found", payload);
@@ -236,12 +241,12 @@ socket.on("round:complete", (payload) => {
 
 socket.on("match:ended", (payload) => {
   hideModal(matchmakingModal);
-  const winnerTextBody =
-    payload.winner === "JUDGE"
-      ? "Judge wins: Human entity was correctly identified."
-      : "Entities win: Judge could not identify the human correctly.";
+  const playerWon =
+    (state.role === "JUDGE" && payload.winner === "JUDGE") ||
+    (state.role === "HUMAN" && payload.winner === "ENTITIES");
 
-  winnerText.textContent = `${winnerTextBody} Human was Entity ${payload.humanEntity}.`;
+  const outcomeText = playerWon ? "You Win" : "You Lose";
+  winnerText.textContent = `${outcomeText}. Human was Entity ${payload.humanEntity}.`;
   showModal(winnerModal);
   statusEl.textContent = "Match ended.";
   appendFeed("Match ended", payload);

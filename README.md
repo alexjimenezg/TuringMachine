@@ -115,6 +115,12 @@ When `CF_TUNNEL_TOKEN` is present, `activate.bat` will run the named tunnel and 
 - `GET /api/metrics`
 	- returns experiment summary (`totalSessions`, `accuracy`, `deceptionRate`, `averageConfidence`, etc.).
 
+- `GET /api/conversations`
+	- returns stored socket match conversations (latest first).
+
+- `GET /api/conversations/:conversationId`
+	- returns full transcript details for one conversation.
+
 ## Data collection details
 
 The app collects and stores experiment outcomes in `data/experiments.json`:
@@ -126,6 +132,7 @@ Additionally, durable per-record files are written to:
 
 - `data/sessions/<sessionId>.json`
 - `data/guesses/<guessId>.json`
+- `data/conversations/<conversationId>.json`
 
 With Docker Compose, `./data` is mounted into the container (`/app/data`), so data is preserved across `activate`/`deactivate` cycles and container restarts.
 

@@ -1,7 +1,15 @@
 const express = require("express");
 const { v4: uuidv4 } = require("uuid");
 
-const { addSession, appendMessage, addGuess, getSessionById, getSummary } = require("../services/dataStore");
+const {
+  addSession,
+  appendMessage,
+  addGuess,
+  getSessionById,
+  getSummary,
+  listConversations,
+  getConversationById
+} = require("../services/dataStore");
 const { getAiReply } = require("../services/azureOpenAI");
 const { getHumanReply } = require("../services/humanResponder");
 const {
@@ -196,6 +204,21 @@ router.get("/game/brief", (_req, res) => {
 router.get("/metrics", async (_req, res) => {
   const summary = await getSummary();
   res.json(summary);
+});
+
+router.get("/conversations", async (_req, res) => {
+  const conversations = await listConversations();
+  res.json({ conversations });
+});
+
+router.get("/conversations/:conversationId", async (req, res) => {
+  const conversation = await getConversationById(req.params.conversationId);
+
+  if (!conversation) {
+    return res.status(404).json({ error: "Conversation not found" });
+  }
+
+  res.json({ conversation });
 });
 
 module.exports = router;

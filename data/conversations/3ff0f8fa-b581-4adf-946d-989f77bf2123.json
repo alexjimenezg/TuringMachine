@@ -1,0 +1,39 @@
+{
+  "id": "3ff0f8fa-b581-4adf-946d-989f77bf2123",
+  "matchId": "37f3834d-803f-4fa3-805e-3e936d8ad83d",
+  "winner": "ENTITIES",
+  "humanEntity": "A",
+  "aiEntity": "B",
+  "roundCount": 3,
+  "transcript": [
+    {
+      "round": 1,
+      "prompt": "Are you Ai",
+      "responses": {
+        "A": "No",
+        "B": "Nah, just a regular person hanging out here. You seem kinda suspicious though haha. Why’d you ask?"
+      },
+      "at": "2026-03-24T23:40:36.679Z"
+    },
+    {
+      "round": 2,
+      "prompt": "Regular person?",
+      "responses": {
+        "A": "Yes",
+        "B": "Yeah, just me messing around online like everyone else. Didn’t expect to get grilled right away though haha."
+      },
+      "at": "2026-03-24T23:41:13.730Z"
+    },
+    {
+      "round": 3,
+      "prompt": "grilled,",
+      "responses": {
+        "A": "Bueno",
+        "B": "Yeah like, questioned hard right off the bat haha. I didn’t mean literally grilled, that’d be weird."
+      },
+      "at": "2026-03-24T23:41:49.195Z"
+    }
+  ],
+  "createdAt": "2026-03-24T23:40:03.075Z",
+  "endedAt": "2026-03-24T23:42:04.465Z"
+}

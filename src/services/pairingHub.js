@@ -1,5 +1,6 @@
 const { v4: uuidv4 } = require("uuid");
 const { getAiReply } = require("./azureOpenAI");
+const { addConversation } = require("./dataStore");
 
 const MAX_ROUNDS = 4;
 
@@ -99,7 +100,32 @@ function createPairingHub(io) {
     return reply;
   }
 
-  function endMatch(match, winner) {
+  async function endMatch(match, winner) {
+    if (match.ended) return;
+    match.ended = true;
+
+    playerToMatch.delete(match.judgeSocketId);
+    playerToMatch.delete(match.humanSocketId);
+    matches.delete(match.id);
+
+    const endedAt = new Date().toISOString();
+
+    try {
+      await addConversation({
+        id: uuidv4(),
+        matchId: match.id,
+        winner,
+        humanEntity: match.humanEntity,
+        aiEntity: match.aiEntity,
+        roundCount: match.transcript.length,
+        transcript: match.transcript,
+        createdAt: match.createdAt,
+        endedAt
+      });
+    } catch {
+      // Avoid interrupting real-time gameplay if file persistence fails.
+    }
+
     const judgeSocket = io.sockets.sockets.get(match.judgeSocketId);
     const humanSocket = io.sockets.sockets.get(match.humanSocketId);
 
@@ -107,15 +133,12 @@ function createPairingHub(io) {
       winner,
       humanEntity: match.humanEntity,
       aiEntity: match.aiEntity,
-      transcript: match.transcript
+      transcript: match.transcript,
+      endedAt
     };
 
     if (judgeSocket) judgeSocket.emit("match:ended", payload);
     if (humanSocket) humanSocket.emit("match:ended", payload);
-
-    playerToMatch.delete(match.judgeSocketId);
-    playerToMatch.delete(match.humanSocketId);
-    matches.delete(match.id);
   }
 
   io.on("connection", (socket) => {
@@ -157,7 +180,9 @@ function createPairingHub(io) {
         aiHistory: [],
         pendingPrompt: null,
         currentRound: 1,
-        transcript: []
+        transcript: [],
+        createdAt: new Date().toISOString(),
+        ended: false
       };
 
       matches.set(match.id, match);

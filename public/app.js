@@ -19,6 +19,9 @@ const metricsOutput = document.getElementById("metricsOutput");
 const roleInfo = document.getElementById("roleInfo");
 const entityInfo = document.getElementById("entityInfo");
 const roundInfo = document.getElementById("roundInfo");
+const refreshConversationsBtn = document.getElementById("refreshConversationsBtn");
+const conversationList = document.getElementById("conversationList");
+const conversationDetail = document.getElementById("conversationDetail");
 
 const howToPlayModal = document.getElementById("howToPlayModal");
 const howToPlayConfirmBtn = document.getElementById("howToPlayConfirmBtn");
@@ -36,8 +39,16 @@ const state = {
   role: null,
   controlledEntity: null,
   round: 0,
-  maxRounds: 4
+  maxRounds: 4,
+  selectedConversationId: null
 };
+
+function formatDateTime(value) {
+  if (!value) return "--";
+  const parsed = new Date(value);
+  if (Number.isNaN(parsed.getTime())) return value;
+  return parsed.toLocaleString();
+}
 
 function setProgress(round, maxRounds) {
   const completion = Math.min(100, Math.round(((round - 1) / maxRounds) * 100));
@@ -99,6 +110,128 @@ function appendFeed(eventText, payload = null) {
   const stamp = new Date().toLocaleTimeString();
   const next = payload ? `${eventText}\n${JSON.stringify(payload, null, 2)}` : eventText;
   metricsOutput.textContent = `[${stamp}] ${next}\n\n${metricsOutput.textContent}`;
+}
+
+function renderConversationDetail(conversation) {
+  conversationDetail.innerHTML = "";
+
+  const header = document.createElement("div");
+  header.className = "conversation-meta";
+
+  const title = document.createElement("h3");
+  title.textContent = `Match ${String(conversation.matchId || conversation.id).slice(0, 8).toUpperCase()}`;
+
+  const details = document.createElement("p");
+  details.className = "status";
+  details.textContent = `Winner: ${conversation.winner} | Human: ${conversation.humanEntity} | AI: ${conversation.aiEntity} | Rounds: ${conversation.roundCount || 0}`;
+
+  const when = document.createElement("p");
+  when.className = "status";
+  when.textContent = `Started: ${formatDateTime(conversation.createdAt)} | Ended: ${formatDateTime(conversation.endedAt)}`;
+
+  header.appendChild(title);
+  header.appendChild(details);
+  header.appendChild(when);
+  conversationDetail.appendChild(header);
+
+  const transcript = conversation.transcript || [];
+  if (transcript.length === 0) {
+    const empty = document.createElement("p");
+    empty.className = "status";
+    empty.textContent = "No round transcript found for this conversation.";
+    conversationDetail.appendChild(empty);
+    return;
+  }
+
+  transcript.forEach((round) => {
+    const card = document.createElement("article");
+    card.className = "round-history-card";
+
+    const roundTitle = document.createElement("h4");
+    roundTitle.textContent = `Round ${round.round}`;
+
+    const prompt = document.createElement("p");
+    prompt.className = "round-prompt";
+    prompt.textContent = `Judge Prompt: ${round.prompt}`;
+
+    const entityA = document.createElement("p");
+    entityA.textContent = `Entity A: ${round.responses?.A || "--"}`;
+
+    const entityB = document.createElement("p");
+    entityB.textContent = `Entity B: ${round.responses?.B || "--"}`;
+
+    const at = document.createElement("small");
+    at.className = "status";
+    at.textContent = `Logged at: ${formatDateTime(round.at)}`;
+
+    card.appendChild(roundTitle);
+    card.appendChild(prompt);
+    card.appendChild(entityA);
+    card.appendChild(entityB);
+    card.appendChild(at);
+    conversationDetail.appendChild(card);
+  });
+}
+
+async function loadConversationDetail(conversationId) {
+  try {
+    const response = await fetch(`/api/conversations/${conversationId}`);
+    if (!response.ok) {
+      throw new Error("Unable to load conversation details.");
+    }
+
+    const payload = await response.json();
+    renderConversationDetail(payload.conversation);
+  } catch (error) {
+    conversationDetail.innerHTML = `<p class="status">${error.message || "Failed loading conversation."}</p>`;
+  }
+}
+
+async function loadConversations(preferredConversationId = null) {
+  conversationList.innerHTML = '<p class="status">Loading conversations...</p>';
+
+  try {
+    const response = await fetch("/api/conversations");
+    if (!response.ok) {
+      throw new Error("Unable to load conversations list.");
+    }
+
+    const payload = await response.json();
+    const conversations = payload.conversations || [];
+
+    conversationList.innerHTML = "";
+    if (conversations.length === 0) {
+      state.selectedConversationId = null;
+      conversationList.innerHTML = '<p class="status">No conversations yet. Finish a match to store one.</p>';
+      conversationDetail.innerHTML = '<p class="status">Select a conversation to inspect rounds and responses.</p>';
+      return;
+    }
+
+    const selectedId = preferredConversationId || state.selectedConversationId || conversations[0].id;
+    state.selectedConversationId = selectedId;
+
+    conversations.forEach((conversation) => {
+      const button = document.createElement("button");
+      button.className = "conversation-item";
+      if (conversation.id === selectedId) {
+        button.classList.add("active");
+      }
+
+      const matchLabel = String(conversation.matchId || conversation.id).slice(0, 8).toUpperCase();
+      button.textContent = `${matchLabel} | ${conversation.winner} | ${conversation.roundCount} rounds`;
+      button.addEventListener("click", async () => {
+        state.selectedConversationId = conversation.id;
+        await loadConversations(conversation.id);
+      });
+
+      conversationList.appendChild(button);
+    });
+
+    await loadConversationDetail(selectedId);
+  } catch (error) {
+    conversationList.innerHTML = `<p class="status">${error.message || "Failed loading conversations."}</p>`;
+    conversationDetail.innerHTML = '<p class="status">Unable to render conversation details.</p>';
+  }
 }
 
 startBtn.addEventListener("click", () => {
@@ -163,6 +296,10 @@ winnerConfirmBtn.addEventListener("click", () => {
   metricsOutput.textContent = "Waiting for events...";
   resetMatchState();
   updateInteractionLocks();
+});
+
+refreshConversationsBtn.addEventListener("click", async () => {
+  await loadConversations(state.selectedConversationId);
 });
 
 socket.on("queue:joined", () => {
@@ -251,7 +388,9 @@ socket.on("match:ended", (payload) => {
   statusEl.textContent = "Match ended.";
   appendFeed("Match ended", payload);
   updateInteractionLocks();
+  loadConversations();
 });
 
 resetMatchState();
 updateInteractionLocks();
+loadConversations();

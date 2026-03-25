@@ -1,38 +1,997 @@
-{"level":"info","time":"2026-03-24T21:48:53Z","message":"Thank you for trying Cloudflare Tunnel. Doing so, without a Cloudflare account, is a quick way to experiment and try it out. However, be aware that these account-less Tunnels have no uptime guarantee, are subject to the Cloudflare Online Services Terms of Use (https://www.cloudflare.com/website-terms/), and Cloudflare reserves the right to investigate your use of Tunnels for violations of such terms. If you intend to use Tunnels in production you should use a pre-created named tunnel by following: https://developers.cloudflare.com/cloudflare-one/connections/connect-apps"}
-{"level":"info","time":"2026-03-24T21:48:53Z","message":"Requesting new quick Tunnel on trycloudflare.com..."}
-{"level":"info","time":"2026-03-24T21:49:06Z","message":"+--------------------------------------------------------------------------------------------+"}
-{"level":"info","time":"2026-03-24T21:49:06Z","message":"|  Your quick Tunnel has been created! Visit it at (it may take some time to be reachable):  |"}
-{"level":"info","time":"2026-03-24T21:49:06Z","message":"|  https://guys-confident-provider-acc.trycloudflare.com                                     |"}
-{"level":"info","time":"2026-03-24T21:49:06Z","message":"+--------------------------------------------------------------------------------------------+"}
-{"level":"info","time":"2026-03-24T21:49:06Z","message":"Cannot determine default configuration path. No file [config.yml config.yaml] in [~/.cloudflared ~/.cloudflare-warp ~/cloudflare-warp]"}
-{"level":"info","time":"2026-03-24T21:49:06Z","message":"Version 2026.2.0 (Checksum b3279f2186a1c3c438ad5865e802bbbec26090c5d3fdb4ac1113f1143a94837a)"}
-{"level":"info","time":"2026-03-24T21:49:06Z","message":"GOOS: windows, GOVersion: go1.24.13, GoArch: amd64"}
-{"level":"info","time":"2026-03-24T21:49:06Z","message":"Settings: map[ha-connections:1 logfile:C:\\Users\\alexi\\OneDrive\\Documentos\\ITAM-alex\\TuringMachineV2\\TuringMachine\\tools\\cloudflared-runtime.log loglevel:info no-autoupdate:true protocol:quic url:http://localhost:3000]"}
-{"level":"info","time":"2026-03-24T21:49:06Z","message":"cloudflared will not automatically update on Windows systems."}
-{"level":"info","time":"2026-03-24T21:49:07Z","message":"Generated Connector ID: 6565f4da-e5ce-4c0a-8672-2207f5099481"}
-{"level":"info","time":"2026-03-24T21:49:07Z","message":"Initial protocol quic"}
-{"level":"info","time":"2026-03-24T21:49:07Z","message":"ICMP proxy will use 10.10.9.130 as source for IPv4"}
-{"level":"info","time":"2026-03-24T21:49:07Z","message":"ICMP proxy will use fde9:a436:9bbf:4e32:12df:c50:ec01:9e1c in zone Wi-Fi as source for IPv6"}
-{"level":"info","time":"2026-03-24T21:49:07Z","message":"cloudflared does not support loading the system root certificate pool on Windows. Please use --origin-ca-pool <PATH> to specify the path to the certificate pool"}
-{"level":"info","time":"2026-03-24T21:49:07Z","message":"ICMP proxy will use 10.10.9.130 as source for IPv4"}
-{"level":"info","event":0,"ip":"198.41.192.227","connIndex":0,"time":"2026-03-24T21:49:07Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
-{"level":"info","time":"2026-03-24T21:49:07Z","message":"ICMP proxy will use fde9:a436:9bbf:4e32:12df:c50:ec01:9e1c in zone Wi-Fi as source for IPv6"}
-{"level":"info","time":"2026-03-24T21:49:07Z","message":"Starting metrics server on 127.0.0.1:20241/metrics"}
-{"level":"info","event":0,"connection":"1cc3dbe8-7244-47df-8a64-20861432b7bf","connIndex":0,"location":"dfw07","ip":"198.41.192.227","protocol":"quic","time":"2026-03-24T21:49:09Z","message":"Registered tunnel connection"}
-{"level":"error","event":0,"ip":"198.41.192.227","connIndex":0,"error":"timeout: no recent network activity","time":"2026-03-24T22:15:42Z","message":"failed to run the datagram handler"}
-{"level":"error","event":0,"ip":"198.41.192.227","connIndex":0,"error":"failed to accept QUIC stream: timeout: no recent network activity","time":"2026-03-24T22:15:42Z","message":"failed to accept incoming stream requests"}
-{"level":"error","event":0,"ip":"198.41.192.227","connIndex":0,"error":"datagram manager encountered a failure while serving","time":"2026-03-24T22:15:43Z","message":"failed to serve tunnel connection"}
-{"level":"error","event":0,"ip":"198.41.192.227","connIndex":0,"error":"datagram manager encountered a failure while serving","time":"2026-03-24T22:15:43Z","message":"Serve tunnel error"}
-{"level":"info","event":0,"ip":"198.41.192.227","connIndex":0,"time":"2026-03-24T22:15:43Z","message":"Retrying connection in up to 1s"}
-{"level":"info","event":0,"ip":"198.41.192.227","connIndex":0,"time":"2026-03-24T22:15:44Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
-{"level":"error","event":0,"ip":"198.41.192.227","connIndex":0,"error":"failed to dial to edge with quic: timeout: no recent network activity","time":"2026-03-24T22:15:49Z","message":"Failed to dial a quic connection"}
-{"level":"info","event":0,"ip":"198.41.192.227","connIndex":0,"time":"2026-03-24T22:15:49Z","message":"Retrying connection in up to 4s"}
-{"level":"info","event":0,"ip":"198.41.192.47","connIndex":0,"time":"2026-03-24T22:15:53Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
-{"level":"info","event":0,"connection":"3f14fd57-63f0-41cd-8269-a667a8a41c45","connIndex":0,"location":"dfw01","ip":"198.41.192.47","protocol":"quic","time":"2026-03-24T22:15:54Z","message":"Registered tunnel connection"}
-{"level":"error","event":0,"ip":"198.41.192.47","connIndex":0,"error":"failed to accept QUIC stream: timeout: no recent network activity","time":"2026-03-24T22:20:44Z","message":"failed to accept incoming stream requests"}
-{"level":"error","event":0,"ip":"198.41.192.47","connIndex":0,"error":"timeout: no recent network activity","time":"2026-03-24T22:20:44Z","message":"failed to run the datagram handler"}
-{"level":"error","event":0,"ip":"198.41.192.47","connIndex":0,"error":"accept stream listener encountered a failure while serving","time":"2026-03-24T22:20:44Z","message":"failed to serve tunnel connection"}
-{"level":"error","event":0,"ip":"198.41.192.47","connIndex":0,"error":"accept stream listener encountered a failure while serving","time":"2026-03-24T22:20:44Z","message":"Serve tunnel error"}
-{"level":"info","event":0,"ip":"198.41.192.47","connIndex":0,"time":"2026-03-24T22:20:44Z","message":"Retrying connection in up to 1s"}
-{"level":"info","event":0,"ip":"198.41.192.47","connIndex":0,"time":"2026-03-24T22:20:46Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
-{"level":"info","event":0,"connection":"fbe8eccf-44c1-4872-843d-fa9bd0af4f9f","connIndex":0,"location":"dfw01","ip":"198.41.192.47","protocol":"quic","time":"2026-03-24T22:20:46Z","message":"Registered tunnel connection"}
+{"level":"info","time":"2026-03-25T00:22:46Z","message":"Thank you for trying Cloudflare Tunnel. Doing so, without a Cloudflare account, is a quick way to experiment and try it out. However, be aware that these account-less Tunnels have no uptime guarantee, are subject to the Cloudflare Online Services Terms of Use (https://www.cloudflare.com/website-terms/), and Cloudflare reserves the right to investigate your use of Tunnels for violations of such terms. If you intend to use Tunnels in production you should use a pre-created named tunnel by following: https://developers.cloudflare.com/cloudflare-one/connections/connect-apps"}
+{"level":"info","time":"2026-03-25T00:22:46Z","message":"Requesting new quick Tunnel on trycloudflare.com..."}
+{"level":"info","time":"2026-03-25T00:22:50Z","message":"+--------------------------------------------------------------------------------------------+"}
+{"level":"info","time":"2026-03-25T00:22:50Z","message":"|  Your quick Tunnel has been created! Visit it at (it may take some time to be reachable):  |"}
+{"level":"info","time":"2026-03-25T00:22:50Z","message":"|  https://asp-keep-opponent-transition.trycloudflare.com                                    |"}
+{"level":"info","time":"2026-03-25T00:22:50Z","message":"+--------------------------------------------------------------------------------------------+"}
+{"level":"info","time":"2026-03-25T00:22:50Z","message":"Cannot determine default configuration path. No file [config.yml config.yaml] in [~/.cloudflared ~/.cloudflare-warp ~/cloudflare-warp]"}
+{"level":"info","time":"2026-03-25T00:22:50Z","message":"Version 2026.2.0 (Checksum b3279f2186a1c3c438ad5865e802bbbec26090c5d3fdb4ac1113f1143a94837a)"}
+{"level":"info","time":"2026-03-25T00:22:50Z","message":"GOOS: windows, GOVersion: go1.24.13, GoArch: amd64"}
+{"level":"info","time":"2026-03-25T00:22:50Z","message":"Settings: map[ha-connections:1 logfile:C:\\Users\\alexi\\OneDrive\\Documentos\\ITAM-alex\\TuringMachineV2\\TuringMachine\\tools\\cloudflared-runtime.log loglevel:info no-autoupdate:true protocol:quic url:http://localhost:3000]"}
+{"level":"info","time":"2026-03-25T00:22:50Z","message":"cloudflared will not automatically update on Windows systems."}
+{"level":"info","time":"2026-03-25T00:22:50Z","message":"Generated Connector ID: 1b6e1be4-ce26-4ca0-876c-d510e1e821b8"}
+{"level":"info","time":"2026-03-25T00:22:50Z","message":"Initial protocol quic"}
+{"level":"info","time":"2026-03-25T00:22:50Z","message":"ICMP proxy will use 10.10.9.130 as source for IPv4"}
+{"level":"info","time":"2026-03-25T00:22:50Z","message":"ICMP proxy will use fde9:a436:9bbf:4e32:12df:c50:ec01:9e1c in zone Wi-Fi as source for IPv6"}
+{"level":"info","time":"2026-03-25T00:22:50Z","message":"cloudflared does not support loading the system root certificate pool on Windows. Please use --origin-ca-pool <PATH> to specify the path to the certificate pool"}
+{"level":"info","time":"2026-03-25T00:22:50Z","message":"ICMP proxy will use 10.10.9.130 as source for IPv4"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T00:22:50Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"info","time":"2026-03-25T00:22:51Z","message":"ICMP proxy will use fde9:a436:9bbf:4e32:12df:c50:ec01:9e1c in zone Wi-Fi as source for IPv6"}
+{"level":"info","time":"2026-03-25T00:22:51Z","message":"Starting metrics server on 127.0.0.1:20241/metrics"}
+{"level":"info","event":0,"connection":"cffbbf31-a951-4b98-b3a0-9a981f939b88","connIndex":0,"location":"dfw08","ip":"198.41.200.193","protocol":"quic","time":"2026-03-25T00:22:51Z","message":"Registered tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"failed to accept QUIC stream: timeout: no recent network activity","time":"2026-03-25T02:32:31Z","message":"failed to accept incoming stream requests"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"timeout: no recent network activity","time":"2026-03-25T02:32:31Z","message":"failed to run the datagram handler"}
+{"level":"error","error":"lookup cfd-features.argotunnel.com: dnsquery: This operation returned because the timeout period expired.","time":"2026-03-25T02:32:32Z","message":"Failed to refresh feature selector"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"accept stream listener encountered a failure while serving","time":"2026-03-25T02:32:33Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"accept stream listener encountered a failure while serving","time":"2026-03-25T02:32:35Z","message":"Serve tunnel error"}
+{"level":"error","error":"lookup region1.v2.argotunnel.com: i/o timeout","time":"2026-03-25T02:32:36Z","message":"Failed to refresh DNS local resolver"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:32:37Z","message":"Retrying connection in up to 1s"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:32:42Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"context canceled","time":"2026-03-25T02:32:47Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:32:48Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:32:49Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:32:49Z","message":"Retrying connection in up to 4s"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:32:51Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"context canceled","time":"2026-03-25T02:32:51Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:32:51Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:32:51Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:32:51Z","message":"Retrying connection in up to 8s"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:32:58Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"context canceled","time":"2026-03-25T02:32:58Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:32:58Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:32:58Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:32:58Z","message":"Retrying connection in up to 16s"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:33:04Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"context canceled","time":"2026-03-25T02:33:04Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:33:04Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:33:04Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:33:04Z","message":"Retrying connection in up to 32s"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:33:32Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"context canceled","time":"2026-03-25T02:33:32Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:33:32Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:33:32Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:33:32Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:33:55Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"context canceled","time":"2026-03-25T02:33:55Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:33:55Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:33:55Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:33:55Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:34:11Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"context canceled","time":"2026-03-25T02:34:12Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:34:12Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:34:12Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:34:12Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:34:12Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"context canceled","time":"2026-03-25T02:34:12Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:34:12Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:34:12Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:34:12Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:34:28Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"context canceled","time":"2026-03-25T02:34:28Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:34:28Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:34:28Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:34:28Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:34:57Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"context canceled","time":"2026-03-25T02:34:57Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:34:57Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:34:57Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:34:57Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:35:21Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"context canceled","time":"2026-03-25T02:35:21Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:35:21Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:35:21Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:35:21Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:35:50Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"context canceled","time":"2026-03-25T02:35:50Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:35:50Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:35:50Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:35:50Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:36:17Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"context canceled","time":"2026-03-25T02:36:17Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:36:17Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:36:17Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:36:17Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:36:44Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"context canceled","time":"2026-03-25T02:36:44Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:36:44Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:36:44Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:36:44Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:37:04Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"context canceled","time":"2026-03-25T02:37:04Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:37:04Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:37:04Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:37:04Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:37:18Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"context canceled","time":"2026-03-25T02:37:18Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:37:18Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:37:18Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:37:18Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:37:40Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"context canceled","time":"2026-03-25T02:37:40Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:37:40Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:37:40Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:37:40Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:38:11Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"context canceled","time":"2026-03-25T02:38:12Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:38:12Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:38:12Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:38:12Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:38:38Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"context canceled","time":"2026-03-25T02:38:38Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:38:38Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:38:38Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:38:38Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:38:55Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"context canceled","time":"2026-03-25T02:38:55Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:38:55Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:38:55Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:38:55Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:39:01Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"context canceled","time":"2026-03-25T02:39:01Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:39:01Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:39:01Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:39:01Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:39:27Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"context canceled","time":"2026-03-25T02:39:27Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:39:27Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:39:27Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:39:27Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:39:34Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"context canceled","time":"2026-03-25T02:39:34Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:39:34Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:39:34Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:39:34Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:39:45Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"context canceled","time":"2026-03-25T02:39:46Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:39:46Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:39:46Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:39:46Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:40:02Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"context canceled","time":"2026-03-25T02:40:02Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:40:02Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:40:02Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:40:02Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:40:09Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"context canceled","time":"2026-03-25T02:40:09Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:40:09Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:40:09Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:40:09Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:40:19Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"context canceled","time":"2026-03-25T02:40:19Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:40:19Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:40:19Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:40:19Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:40:49Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"context canceled","time":"2026-03-25T02:40:49Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:40:49Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:40:49Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:40:49Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:41:00Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"context canceled","time":"2026-03-25T02:41:00Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:41:00Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:41:00Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:41:00Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:41:20Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"context canceled","time":"2026-03-25T02:41:20Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:41:20Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:41:20Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:41:20Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:41:51Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"context canceled","time":"2026-03-25T02:41:51Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:41:51Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:41:51Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:41:51Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:42:17Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"context canceled","time":"2026-03-25T02:42:17Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:42:17Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:42:17Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:42:17Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:42:38Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"context canceled","time":"2026-03-25T02:42:38Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:42:38Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:42:38Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:42:38Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:42:58Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"context canceled","time":"2026-03-25T02:42:58Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:42:58Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:42:58Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:42:58Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:43:07Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"context canceled","time":"2026-03-25T02:43:07Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:43:07Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:43:07Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:43:07Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:43:30Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"context canceled","time":"2026-03-25T02:43:30Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:43:30Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:43:30Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:43:30Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:43:50Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"context canceled","time":"2026-03-25T02:43:50Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:43:50Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:43:50Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:43:50Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:44:10Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"context canceled","time":"2026-03-25T02:44:10Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:44:10Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:44:10Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:44:10Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:44:14Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"context canceled","time":"2026-03-25T02:44:14Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:44:14Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:44:14Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:44:14Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:44:31Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"context canceled","time":"2026-03-25T02:44:31Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:44:31Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:44:31Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:44:32Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:45:00Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"context canceled","time":"2026-03-25T02:45:00Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:45:00Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:45:00Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:45:00Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:45:12Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"context canceled","time":"2026-03-25T02:45:12Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:45:12Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:45:12Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:45:12Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:45:24Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"context canceled","time":"2026-03-25T02:45:24Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:45:24Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:45:24Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:45:24Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:45:54Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"context canceled","time":"2026-03-25T02:45:54Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:45:54Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:45:54Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:45:54Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:45:58Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"context canceled","time":"2026-03-25T02:45:58Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:45:58Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:45:58Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:45:58Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:46:00Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"context canceled","time":"2026-03-25T02:46:01Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:46:01Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:46:01Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:46:01Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:46:27Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"context canceled","time":"2026-03-25T02:46:27Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:46:27Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:46:27Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:46:27Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:46:37Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"context canceled","time":"2026-03-25T02:46:38Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:46:38Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:46:38Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:46:38Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:47:06Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"context canceled","time":"2026-03-25T02:47:06Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:47:06Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:47:06Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:47:06Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:47:15Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"context canceled","time":"2026-03-25T02:47:15Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:47:15Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:47:15Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:47:15Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:47:37Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"context canceled","time":"2026-03-25T02:47:37Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:47:37Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:47:37Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:47:37Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:47:48Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"context canceled","time":"2026-03-25T02:47:48Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:47:48Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:47:48Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:47:48Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:48:14Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"context canceled","time":"2026-03-25T02:48:14Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:48:14Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:48:14Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:48:14Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:48:35Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"context canceled","time":"2026-03-25T02:48:35Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:48:35Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:48:35Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:48:35Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:49:06Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"context canceled","time":"2026-03-25T02:49:06Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:49:06Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:49:06Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:49:06Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:49:24Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"context canceled","time":"2026-03-25T02:49:24Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:49:24Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:49:24Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:49:24Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:49:27Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"context canceled","time":"2026-03-25T02:49:27Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:49:27Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:49:27Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:49:27Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:49:37Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"context canceled","time":"2026-03-25T02:49:37Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:49:37Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:49:37Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:49:37Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:49:38Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"context canceled","time":"2026-03-25T02:49:38Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:49:38Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:49:38Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:49:38Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:50:09Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"context canceled","time":"2026-03-25T02:50:09Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:50:09Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:50:09Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:50:09Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:50:30Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"context canceled","time":"2026-03-25T02:50:30Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:50:30Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:50:30Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:50:30Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:50:45Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"context canceled","time":"2026-03-25T02:50:45Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:50:45Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:50:45Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:50:45Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:51:12Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"context canceled","time":"2026-03-25T02:51:12Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:51:12Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:51:12Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:51:12Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:51:37Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"context canceled","time":"2026-03-25T02:51:37Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:51:37Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:51:37Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:51:37Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:51:59Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"context canceled","time":"2026-03-25T02:51:59Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:51:59Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:51:59Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:51:59Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:52:18Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"context canceled","time":"2026-03-25T02:52:18Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:52:18Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:52:18Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:52:18Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:52:48Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"context canceled","time":"2026-03-25T02:52:48Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:52:48Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:52:48Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:52:48Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:52:59Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"context canceled","time":"2026-03-25T02:52:59Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:52:59Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:52:59Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:52:59Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:53:17Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"context canceled","time":"2026-03-25T02:53:17Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:53:17Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:53:17Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:53:17Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:53:26Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"context canceled","time":"2026-03-25T02:53:26Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:53:26Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:53:26Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:53:26Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:53:29Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"context canceled","time":"2026-03-25T02:53:29Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:53:29Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:53:29Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:53:29Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:53:36Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"context canceled","time":"2026-03-25T02:53:36Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:53:36Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:53:36Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:53:36Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:53:54Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"context canceled","time":"2026-03-25T02:53:54Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:53:54Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:53:54Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:53:54Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:54:00Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"context canceled","time":"2026-03-25T02:54:00Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:54:00Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:54:00Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:54:00Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:54:27Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"context canceled","time":"2026-03-25T02:54:27Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:54:27Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:54:27Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:54:27Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:54:30Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"context canceled","time":"2026-03-25T02:54:30Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:54:30Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:54:30Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:54:30Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:54:54Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"context canceled","time":"2026-03-25T02:54:54Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:54:54Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:54:54Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:54:54Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:55:23Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"context canceled","time":"2026-03-25T02:55:23Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:55:23Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:55:23Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:55:23Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:55:27Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"context canceled","time":"2026-03-25T02:55:27Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:55:27Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:55:27Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:55:27Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:55:45Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"context canceled","time":"2026-03-25T02:55:46Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:55:46Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:55:46Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:55:46Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:55:46Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"context canceled","time":"2026-03-25T02:55:46Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:55:46Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:55:46Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:55:46Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:56:04Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"context canceled","time":"2026-03-25T02:56:05Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:56:05Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:56:05Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:56:05Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:56:10Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"context canceled","time":"2026-03-25T02:56:10Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:56:10Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:56:10Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:56:10Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:56:17Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"context canceled","time":"2026-03-25T02:56:17Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:56:17Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:56:17Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:56:17Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:56:39Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"context canceled","time":"2026-03-25T02:56:39Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:56:39Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:56:39Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:56:39Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:57:04Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"context canceled","time":"2026-03-25T02:57:04Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:57:04Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:57:04Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:57:04Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:57:31Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"context canceled","time":"2026-03-25T02:57:31Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:57:31Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:57:31Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:57:31Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:57:46Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"context canceled","time":"2026-03-25T02:57:46Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:57:46Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:57:46Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:57:46Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:57:58Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"context canceled","time":"2026-03-25T02:57:58Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:57:58Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:57:58Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:57:58Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:58:17Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"context canceled","time":"2026-03-25T02:58:18Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:58:18Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:58:18Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:58:18Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:58:36Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"context canceled","time":"2026-03-25T02:58:36Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:58:36Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:58:36Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:58:36Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:58:51Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"context canceled","time":"2026-03-25T02:58:51Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:58:51Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:58:51Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:58:51Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:59:05Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"context canceled","time":"2026-03-25T02:59:05Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:59:05Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:59:05Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:59:05Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:59:12Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"context canceled","time":"2026-03-25T02:59:12Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:59:12Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:59:12Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:59:12Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:59:17Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"context canceled","time":"2026-03-25T02:59:17Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:59:17Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:59:17Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:59:17Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:59:22Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"context canceled","time":"2026-03-25T02:59:22Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:59:22Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:59:22Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:59:22Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:59:31Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"context canceled","time":"2026-03-25T02:59:31Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:59:31Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:59:31Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:59:31Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:59:32Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"context canceled","time":"2026-03-25T02:59:32Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:59:32Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:59:32Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:59:32Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:59:37Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"context canceled","time":"2026-03-25T02:59:37Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:59:37Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:59:37Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:59:37Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:59:56Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"context canceled","time":"2026-03-25T02:59:56Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:59:56Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T02:59:56Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T02:59:56Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T03:00:03Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"context canceled","time":"2026-03-25T03:00:03Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T03:00:03Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T03:00:03Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T03:00:03Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T03:00:24Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"context canceled","time":"2026-03-25T03:00:25Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T03:00:25Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T03:00:25Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T03:00:25Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T03:00:27Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"context canceled","time":"2026-03-25T03:00:27Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T03:00:27Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T03:00:27Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T03:00:27Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T03:00:28Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"context canceled","time":"2026-03-25T03:00:28Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T03:00:28Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T03:00:28Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T03:00:28Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T03:00:37Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"context canceled","time":"2026-03-25T03:00:37Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T03:00:37Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T03:00:37Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T03:00:37Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T03:01:07Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"context canceled","time":"2026-03-25T03:01:07Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T03:01:07Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T03:01:07Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T03:01:07Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T03:01:36Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"context canceled","time":"2026-03-25T03:01:36Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T03:01:36Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T03:01:36Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T03:01:36Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T03:02:01Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"context canceled","time":"2026-03-25T03:02:01Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T03:02:01Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T03:02:01Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T03:02:01Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T03:02:04Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"context canceled","time":"2026-03-25T03:02:04Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T03:02:04Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T03:02:04Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T03:02:04Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T03:02:04Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"context canceled","time":"2026-03-25T03:02:04Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T03:02:04Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T03:02:04Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T03:02:04Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T03:02:31Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"context canceled","time":"2026-03-25T03:02:31Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T03:02:31Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T03:02:31Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T03:02:31Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T03:02:49Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"context canceled","time":"2026-03-25T03:02:49Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T03:02:49Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T03:02:49Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T03:02:49Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T03:03:18Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"context canceled","time":"2026-03-25T03:03:18Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T03:03:18Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T03:03:18Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T03:03:18Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T03:03:39Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"context canceled","time":"2026-03-25T03:03:39Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T03:03:39Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T03:03:39Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T03:03:39Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T03:42:48Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","error":"lookup cfd-features.argotunnel.com: dnsquery: This operation returned because the timeout period expired.","time":"2026-03-25T03:42:49Z","message":"Failed to refresh feature selector"}
+{"level":"error","event":0,"ip":"198.41.200.193","connIndex":0,"error":"failed to dial to edge with quic: write udp [::]:56709->198.41.200.193:7844: wsasendto: A socket operation was attempted to an unreachable network.","time":"2026-03-25T03:42:50Z","message":"Failed to dial a quic connection"}
+{"level":"info","event":0,"ip":"198.41.200.193","connIndex":0,"time":"2026-03-25T03:42:50Z","message":"Retrying connection in up to 1m4s"}
+{"level":"error","error":"lookup region1.v2.argotunnel.com: i/o timeout","time":"2026-03-25T03:42:54Z","message":"Failed to refresh DNS local resolver"}
+{"level":"error","error":"lookup cfd-features.argotunnel.com: dnsquery: This operation returned because the timeout period expired.","time":"2026-03-25T09:32:00Z","message":"Failed to refresh feature selector"}
+{"level":"info","event":0,"ip":"198.41.192.77","connIndex":0,"time":"2026-03-25T09:32:00Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","error":"lookup region1.v2.argotunnel.com: i/o timeout","time":"2026-03-25T09:32:05Z","message":"Failed to refresh DNS local resolver"}
+{"level":"error","event":0,"ip":"198.41.192.77","connIndex":0,"error":"failed to dial to edge with quic: timeout: no recent network activity","time":"2026-03-25T09:32:06Z","message":"Failed to dial a quic connection"}
+{"level":"info","event":0,"ip":"198.41.192.77","connIndex":0,"time":"2026-03-25T09:32:06Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.192.227","connIndex":0,"time":"2026-03-25T09:32:31Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.192.227","connIndex":0,"error":"failed to dial to edge with quic: timeout: no recent network activity","time":"2026-03-25T09:32:36Z","message":"Failed to dial a quic connection"}
+{"level":"info","event":0,"ip":"198.41.192.227","connIndex":0,"time":"2026-03-25T09:32:36Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:33:00Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"context canceled","time":"2026-03-25T09:33:02Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:33:02Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:33:02Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:33:02Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:33:27Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"context canceled","time":"2026-03-25T09:33:28Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:33:28Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:33:28Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:33:28Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:33:58Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"context canceled","time":"2026-03-25T09:33:58Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:33:58Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:33:58Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:33:58Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:34:15Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"context canceled","time":"2026-03-25T09:34:16Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:34:16Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:34:16Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:34:16Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:34:18Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"context canceled","time":"2026-03-25T09:34:18Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:34:18Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:34:18Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:34:18Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:34:46Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"context canceled","time":"2026-03-25T09:34:46Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:34:46Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:34:46Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:34:46Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:34:53Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"context canceled","time":"2026-03-25T09:34:53Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:34:53Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:34:53Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:34:53Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:35:04Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"context canceled","time":"2026-03-25T09:35:04Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:35:04Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:35:04Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:35:04Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:35:25Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"context canceled","time":"2026-03-25T09:35:26Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:35:26Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:35:26Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:35:26Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:35:42Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"context canceled","time":"2026-03-25T09:35:42Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:35:42Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:35:42Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:35:42Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:35:46Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"context canceled","time":"2026-03-25T09:35:46Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:35:46Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:35:46Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:35:46Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:35:49Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"context canceled","time":"2026-03-25T09:35:49Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:35:49Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:35:49Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:35:49Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:35:59Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"context canceled","time":"2026-03-25T09:35:59Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:35:59Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:35:59Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:35:59Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:36:12Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"context canceled","time":"2026-03-25T09:36:12Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:36:12Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:36:12Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:36:12Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:36:23Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"context canceled","time":"2026-03-25T09:36:23Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:36:23Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:36:23Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:36:23Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:36:31Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"context canceled","time":"2026-03-25T09:36:31Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:36:31Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:36:31Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:36:31Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:36:59Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"context canceled","time":"2026-03-25T09:36:59Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:36:59Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:36:59Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:36:59Z","message":"Retrying connection in up to 1m4s"}
+{"level":"error","error":"lookup region1.v2.argotunnel.com: i/o timeout","time":"2026-03-25T09:37:10Z","message":"Failed to refresh DNS local resolver"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:37:25Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"context canceled","time":"2026-03-25T09:37:25Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:37:25Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:37:25Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:37:25Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:37:49Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"context canceled","time":"2026-03-25T09:37:49Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:37:49Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:37:49Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:37:49Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:37:59Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"context canceled","time":"2026-03-25T09:37:59Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:37:59Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:37:59Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:37:59Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:38:22Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"context canceled","time":"2026-03-25T09:38:22Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:38:22Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:38:22Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:38:22Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:38:53Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"context canceled","time":"2026-03-25T09:38:53Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:38:53Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:38:54Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:38:54Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:38:55Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"context canceled","time":"2026-03-25T09:38:55Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:38:55Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:38:55Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:38:55Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:39:05Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"context canceled","time":"2026-03-25T09:39:05Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:39:05Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:39:05Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:39:05Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:39:11Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"context canceled","time":"2026-03-25T09:39:12Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:39:12Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:39:12Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:39:12Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:39:34Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"context canceled","time":"2026-03-25T09:39:34Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:39:34Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:39:34Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:39:34Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:39:36Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"context canceled","time":"2026-03-25T09:39:37Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:39:37Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:39:37Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:39:37Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:39:45Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"context canceled","time":"2026-03-25T09:39:45Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:39:45Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:39:45Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:39:45Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:39:55Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"context canceled","time":"2026-03-25T09:39:55Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:39:55Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:39:55Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:39:55Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:40:02Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"context canceled","time":"2026-03-25T09:40:02Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:40:02Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:40:02Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:40:02Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:40:04Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"context canceled","time":"2026-03-25T09:40:04Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:40:04Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:40:04Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:40:04Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:40:19Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"context canceled","time":"2026-03-25T09:40:19Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:40:19Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:40:19Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:40:19Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:40:24Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"context canceled","time":"2026-03-25T09:40:24Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:40:24Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:40:24Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:40:24Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:40:27Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"context canceled","time":"2026-03-25T09:40:27Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:40:27Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:40:27Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:40:27Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:40:49Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"context canceled","time":"2026-03-25T09:40:49Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:40:49Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:40:49Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:40:49Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:40:50Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"context canceled","time":"2026-03-25T09:40:51Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:40:51Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:40:51Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:40:51Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:40:58Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"context canceled","time":"2026-03-25T09:40:58Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:40:58Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:40:58Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:40:58Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:41:00Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"context canceled","time":"2026-03-25T09:41:00Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:41:00Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:41:00Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:41:00Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:41:17Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"context canceled","time":"2026-03-25T09:41:17Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:41:17Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:41:17Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:41:17Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:41:22Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"context canceled","time":"2026-03-25T09:41:22Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:41:22Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:41:22Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:41:22Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:41:25Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"context canceled","time":"2026-03-25T09:41:25Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:41:25Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:41:25Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:41:25Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:41:33Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"context canceled","time":"2026-03-25T09:41:33Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:41:33Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:41:33Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:41:33Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:42:04Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"context canceled","time":"2026-03-25T09:42:04Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:42:04Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:42:04Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:42:04Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:42:08Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"context canceled","time":"2026-03-25T09:42:08Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:42:08Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:42:08Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:42:08Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:42:31Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"context canceled","time":"2026-03-25T09:42:31Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:42:31Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:42:31Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:42:31Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:42:49Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"context canceled","time":"2026-03-25T09:42:49Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:42:49Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:42:49Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:42:49Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:43:03Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"context canceled","time":"2026-03-25T09:43:03Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:43:03Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:43:03Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:43:03Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:43:16Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"context canceled","time":"2026-03-25T09:43:16Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:43:16Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:43:16Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:43:16Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:43:35Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"context canceled","time":"2026-03-25T09:43:36Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:43:36Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:43:36Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:43:36Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:43:41Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"context canceled","time":"2026-03-25T09:43:41Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:43:41Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:43:41Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:43:41Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:43:56Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"context canceled","time":"2026-03-25T09:43:57Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:43:57Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:43:57Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:43:57Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:44:14Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"context canceled","time":"2026-03-25T09:44:15Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:44:15Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:44:15Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:44:15Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:44:38Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"context canceled","time":"2026-03-25T09:44:38Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:44:38Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:44:38Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:44:38Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:44:47Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"context canceled","time":"2026-03-25T09:44:48Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:44:48Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:44:48Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:44:48Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:45:16Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"context canceled","time":"2026-03-25T09:45:16Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:45:16Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:45:16Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:45:16Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:45:20Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"context canceled","time":"2026-03-25T09:45:20Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:45:20Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:45:20Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:45:20Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:45:31Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"context canceled","time":"2026-03-25T09:45:31Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:45:31Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:45:31Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:45:31Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:45:55Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"context canceled","time":"2026-03-25T09:45:55Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:45:56Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:45:56Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:45:56Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:46:15Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"context canceled","time":"2026-03-25T09:46:15Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:46:15Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:46:15Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:46:15Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:46:46Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"context canceled","time":"2026-03-25T09:46:46Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:46:46Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:46:46Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:46:46Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:47:10Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"context canceled","time":"2026-03-25T09:47:10Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:47:10Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:47:10Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:47:10Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:47:32Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"context canceled","time":"2026-03-25T09:47:32Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:47:32Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:47:32Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:47:32Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:47:37Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"context canceled","time":"2026-03-25T09:47:37Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:47:37Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:47:38Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:47:38Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:47:44Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"context canceled","time":"2026-03-25T09:47:44Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:47:44Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:47:44Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:47:44Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:48:08Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"context canceled","time":"2026-03-25T09:48:08Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:48:08Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:48:08Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:48:08Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:48:25Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"context canceled","time":"2026-03-25T09:48:25Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:48:25Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:48:25Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:48:25Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:48:50Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"context canceled","time":"2026-03-25T09:48:50Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:48:50Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:48:50Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:48:50Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:49:13Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"context canceled","time":"2026-03-25T09:49:13Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:49:13Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:49:13Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:49:13Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:49:31Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"context canceled","time":"2026-03-25T09:49:31Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:49:31Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:49:31Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:49:31Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:49:58Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"context canceled","time":"2026-03-25T09:49:58Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:49:58Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:49:58Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:49:58Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:50:29Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"context canceled","time":"2026-03-25T09:50:29Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:50:29Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:50:29Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:50:29Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:50:46Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"context canceled","time":"2026-03-25T09:50:46Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:50:46Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:50:46Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:50:46Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:51:15Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"context canceled","time":"2026-03-25T09:51:15Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:51:15Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:51:15Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:51:15Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:51:29Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"context canceled","time":"2026-03-25T09:51:29Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:51:29Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:51:29Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:51:29Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:51:31Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"context canceled","time":"2026-03-25T09:51:31Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:51:31Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:51:31Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:51:31Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:51:49Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"context canceled","time":"2026-03-25T09:51:50Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:51:50Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:51:50Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:51:50Z","message":"Retrying connection in up to 1m4s"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:51:57Z","message":"Tunnel connection curve preferences: [X25519MLKEM768 CurveP256]"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"context canceled","time":"2026-03-25T09:51:58Z","message":"failed to run the datagram handler"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:51:58Z","message":"failed to serve tunnel connection"}
+{"level":"error","event":0,"ip":"198.41.200.53","connIndex":0,"error":"control stream encountered a failure while serving","time":"2026-03-25T09:51:58Z","message":"Serve tunnel error"}
+{"level":"info","event":0,"ip":"198.41.200.53","connIndex":0,"time":"2026-03-25T09:51:58Z","message":"Retrying connection in up to 1m4s"}
